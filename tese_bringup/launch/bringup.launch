@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="file" default="/media/andre/Data/00_Tese/Video/1280x720/DJI_0002.mp4" />  
+  
+  <include file="$(find video_stream_opencv)/launch/video_file_50.launch">
+    <arg name="FILENAME" value="$(arg file)" />
+  </include>
+  
+  <include file="$(find video_stream_opencv)/launch/rect_image.launch" />
+  
+  <include file="$(find lsd_slam_core)/launch/tese_lsd_core.launch" />
+  
+  <node name="lsd_slam_viewer" pkg="lsd_slam_viewer" type="viewer" />
+  
+  
+</launch>
+  
+
+

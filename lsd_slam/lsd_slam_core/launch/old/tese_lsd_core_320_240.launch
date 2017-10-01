@@ -1,0 +1,38 @@
+<launch>
+
+
+  <node pkg="lsd_slam_core" 
+      type="live_slam" 
+      name="live_slam"
+      output="screen"
+      args="/image:=/camera/image_raw">
+
+      <param name="calib" value="/home/andre/RosWorkspaces/ISCTE/tese_v1/src/lsd_slam/lsd_slam_core/calib/gopro_calib_320_240.cfg" />
+
+
+      <param name="minUseGrad" value="8.0" /> <!-- 12.0 -->
+      <param name="cameraPixelNoise" value="15.0" />
+      <param name="KFUsageWeight" value="10.0" />
+      <param name="KFDistWeight" value="10.0" />
+
+
+      <param name="doSLAM" value="True" />
+      <param name="doKFReActivation" value="True" />
+      <param name="doMapping" value="True" />
+      <param name="useFabMap" value="False" />
+      <param name="allowNegativeIdepths" value="True" />
+      <param name="useSubpixelStereo" value="True" />
+      <param name="useAffineLightningEstimation" value="True" />
+
+      <param name="multiThreading" value="True" />
+      <param name="maxLoopClosureCandidates" value="0" />
+      <param name="loopclosureStrictness" value="0.0" />
+      <param name="relocalizationTH" value="0.1" />
+      <param name="depthSmoothingFactor" value="3.0" />
+
+  </node>
+<!--
+      <param name="" value="">
+-->  
+
+</launch>

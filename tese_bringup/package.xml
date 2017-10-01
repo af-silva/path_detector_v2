@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <name>tese_bringup</name>
+  <version>0.0.1</version>
+  <description>The tese package</description>
+
+
+  <maintainer email="andre@todo.todo">andre</maintainer>
+
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <run_depend>lsd_slam</run_depend>
+  <run_depend>path_detector</run_depend>
+  <run_depend>video_stream_opencv</run_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

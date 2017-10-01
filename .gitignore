@@ -1,3 +1,33 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Folders
 build/
 bin/
 lib/
@@ -24,6 +54,7 @@ msg/_*.py
 # eclipse stuff
 .project
 .cproject
+/.metadata/
 
 # qcreator stuff
 CMakeLists.txt.user
@@ -45,3 +76,97 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+devel/
+.idea/
+catkin_generated/
+
+*.egg-info/
+.installed.cfg
+*.egg
+*.gpx
+
+# Python Project
+.pydevproject
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Qt
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.cpp_parameters
+qrc_*.cpp
+ui_*.h
+Makefile*
+*-build-*
+*.cxx*
+*.cbp
+*.qrc.depends
+
+# QtCreator
+*.autosave
+
+# QtCtreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+/CMakeLists.txt
+CMakeCache.txt
+
+# Blend Backup Files
+*.blend1
+
+lsd_slam/lsd_slam_viewer/logs/

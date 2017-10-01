@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+
+
+  <node pkg="lsd_slam_core" 
+      type="live_slam" 
+      name="live_slam"
+      output="screen"
+      args="/image:=/camera/image_raw">
+
+      <param name="calib" value="/home/andre/RosWorkspaces/ISCTE/tese_v1/src/lsd_slam/lsd_slam_core/calib/gopro_calib_640_480.cfg" />
+
+
+
+      <!-- Minimal Absolut Image Gradient for a Pixel to be used at all. Increase, 
+      if your camera has large image noise, Decrease if you have low image-noise and 
+      want to also exploit small gradients. Min 1 Max 50-->
+      <param name="minUseGrad" value="12.0" />        <!-- 8.0 |12.0 -->
+      
+      
+      
+      <!-- Image intensity noise used for e.g. tracking weight calculation. Sould be set 
+      larger than the actual sensor-noise, to also account for noise originating from 
+      discretization / linear interpolation. Min 1 Max 50-->
+      <param name="cameraPixelNoise" value="20.0" /> <!-- 15.0 -->
+      
+      
+      
+      <!-- Determines how often Keyframes are taken, depending on the Overlap to the 
+      current Keyframe. Larger -> more Keyframes. Min 0 Max 20-->
+      <param name="KFUsageWeight" value="10.0" />    <!-- 10.0 -->
+      
+      
+      
+      <!-- Determines how often Keyframes are taken, depending on the Distance to the 
+      current Keyframe. Larger -> more Keyframes. Min 0 Max 20-->
+      <param name="KFDistWeight" value="10.0" />     <!-- 10.0 -->
+      
+      
+
+      <param name="doSLAM" value="True" />
+      <param name="doKFReActivation" value="False" />
+      <param name="doMapping" value="True" />
+      <param name="useFabMap" value="False" />
+      <!-- Allow idepth to be (slightle) negative, to avoid introducing a bias for far-away points. -->
+      <param name="allowNegativeIdepths" value="True" />
+      
+      <!-- Compute subpixel-accurate stereo disparity. -->
+      <param name="useSubpixelStereo" value="True" />
+      
+      <!-- EXPERIMENTAL: Correct for global affine intensity changes during tracking. Might help if 
+      you have Problems with Auto-Exposure. -->
+      <param name="useAffineLightningEstimation" value="True" />
+
+      <param name="multiThreading" value="True" />
+      <param name="maxLoopClosureCandidates" value="0" />
+      <param name="loopclosureStrictness" value="0.0" />
+      <param name="relocalizationTH" value="0.1" />      <!-- 0.1 -->
+      <!-- How much to smooth the depth map. Larger -> Less Smoothing Min 0 Max 10-->
+      <param name="depthSmoothingFactor" value="3.0" />  <!-- 3.0 -->
+  </node>
+<!--
+      <param name="" value="">
+-->  
+
+</launch>
