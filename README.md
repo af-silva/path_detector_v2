@@ -31,7 +31,6 @@ developers I would be in grave trouble.
 
 ### Work in progress
 Part of my work needs some additional features added to the LSD-SLAM code, all the modifications are
-hereby commited and available to all, but the core of the algorithm has not in any way changed.
-And the code is being changed, so do not expect a working project for final application. 
-I'm updating every time I can, since i'm not doing this full time.
-Also my thesis as a specific purpose and a data set will be available when it's finish.
+hereby commited and available to all, but the core of the algorithm has not changed in any way.
+
+This work it's not suitible for real world usage, so i'm not responsible in any way or form for the usage of this code in real world applications, this code is intended to be used in a controled enviroment.
