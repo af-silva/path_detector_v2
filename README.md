@@ -7,6 +7,9 @@ developers I would be in grave trouble.
 
 "Standing on the shoulders of giants" - Bernard of Chartres
 
+To cite the work use: 
+Silva, André, Ricardo Mendonça, and Pedro Santana. "Monocular Trail Detection and Tracking Aided by Visual SLAM for Small Unmanned Aerial Vehicles." arXiv preprint arXiv:1806.08331 (2018).
+The article can be found [here](https://arxiv.org/abs/1806.08331)
 
 ### Packages used
 
