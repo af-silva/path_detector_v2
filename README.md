@@ -9,7 +9,7 @@ developers I would be in grave trouble.
 
 To cite the work use: 
 
->Silva, André, Ricardo Mendonça, and Pedro Santana. "Monocular Trail Detection and Tracking Aided by Visual SLAM for Small Unmanned Aerial Vehicles." arXiv preprint arXiv:1806.08331 (2018).
+>A. Silva, R. Mendonça and P. Santana. Monocular Trail Detection and Tracking Aided by Visual SLAM for Small Unmanned Aerial Vehicles. Journal of Intelligent & Robotic Systems (in press), DOI: 10.1007/s10846-019-01033-x, 2019.
 
 The article can be found [here](https://arxiv.org/abs/1806.08331)
 
